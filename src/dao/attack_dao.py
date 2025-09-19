@@ -6,7 +6,7 @@ from business_object.attack.abstract_attack import AbstractAttack
 from business_object.attack.attack_factory import AttackFactory
 
 
-class AttackDao(metaclass=Singleton):
+class AttackDao(metaclass=Singleton):#pas besoin de plusieurs instances de DAO
     def add_attack(self, attack: AbstractAttack) -> bool:
         """
         Add an attack to the database
